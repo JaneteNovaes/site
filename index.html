@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compras na Prática</title>
+<meta name="description" content="Curso rápido de 60 horas para quem está começando como comprador em empresas privadas: estoque, curva ABC, reposição, negociação com fornecedores e contratos.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+h1,h2,h3{font-family:'Archivo',system-ui,sans-serif;text-wrap:balance}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
+a{color:inherit}
+a:focus-visible{outline:3px solid #E08A00;outline-offset:3px}
+.navlink{text-decoration:none}
+.navlink:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<div style="font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #0F1F38; background: #F2F4F7; display: flex; flex-direction: column; line-height: 1.5">
+
+<header id="topo" style="background: #F2F4F7; border-bottom: 1px solid #CBD5E3">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 12px; padding-bottom: 12px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<a class="navlink" href="#topo" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #0F1F38">
+<svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#F5B700"/><rect x="7" y="8" width="3" height="16" fill="#0F1F38"/><rect x="12" y="8" width="2" height="16" fill="#0F1F38"/><rect x="16" y="8" width="4" height="16" fill="#0F1F38"/><rect x="22" y="8" width="3" height="16" fill="#0F1F38"/></svg>
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -0.01em">Compras na Prática</span>
+</a>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px">
+<a class="navlink" href="#para-quem" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 500; color: #0F1F38">Para quem</a>
+<a class="navlink" href="#modulos" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 500; color: #0F1F38">Módulos</a>
+<a class="navlink" href="#metodo" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 500; color: #0F1F38">Método</a>
+<a class="navlink" href="#perguntas" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; font-weight: 500; color: #0F1F38">Perguntas</a>
+<a class="navlink" href="#inscricao" style="display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: 0 20px; border-radius: 4px; background: #0F1F38; color: #FFFFFF; font-size: 15px; font-weight: 600">Inscrição</a>
+</nav>
+</div>
+</header>
+
+<section style="background: #DCE4F0; border-bottom: 1px solid #CBD5E3">
+<svg viewBox="0 0 1440 280" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Ilustração de um almoxarifado com prateleiras industriais e caixas marcadas com as classes A, B e C" style="display: block; width: 100%; height: clamp(180px, 22vw, 300px)">
+<rect width="1440" height="280" fill="#DCE4F0"/>
+<rect x="70" y="62" width="124" height="176" fill="#FFFFFF" stroke="#0F1F38" stroke-width="2"/>
+<rect x="70" y="62" width="124" height="26" fill="#0F1F38"/>
+<rect x="82" y="71" width="44" height="8" fill="#F5B700"/>
+<rect x="84" y="108" width="96" height="4" fill="#9DB2D4"/>
+<rect x="84" y="128" width="96" height="4" fill="#9DB2D4"/>
+<rect x="84" y="148" width="96" height="4" fill="#9DB2D4"/>
+<rect x="84" y="168" width="96" height="4" fill="#9DB2D4"/>
+<rect x="84" y="188" width="96" height="4" fill="#9DB2D4"/>
+<rect x="84" y="208" width="56" height="4" fill="#9DB2D4"/>
+<rect x="1246" y="104" width="130" height="118" fill="#FFFFFF" stroke="#0F1F38" stroke-width="2"/>
+<rect x="1262" y="122" width="4" height="58" fill="#0F1F38"/>
+<rect x="1270" y="122" width="2" height="58" fill="#0F1F38"/>
+<rect x="1276" y="122" width="6" height="58" fill="#0F1F38"/>
+<rect x="1286" y="122" width="2" height="58" fill="#0F1F38"/>
+<rect x="1292" y="122" width="4" height="58" fill="#0F1F38"/>
+<rect x="1300" y="122" width="8" height="58" fill="#0F1F38"/>
+<rect x="1312" y="122" width="2" height="58" fill="#0F1F38"/>
+<rect x="1318" y="122" width="4" height="58" fill="#0F1F38"/>
+<rect x="1326" y="122" width="6" height="58" fill="#0F1F38"/>
+<rect x="1336" y="122" width="2" height="58" fill="#0F1F38"/>
+<rect x="1342" y="122" width="4" height="58" fill="#0F1F38"/>
+<rect x="1350" y="122" width="6" height="58" fill="#0F1F38"/>
+<text x="1311" y="208" text-anchor="middle" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="14" font-weight="600" fill="#0F1F38">A-0001</text>
+<rect x="240" y="30" width="10" height="220" fill="#0F1F38"/>
+<rect x="480" y="30" width="10" height="220" fill="#0F1F38"/>
+<rect x="720" y="30" width="10" height="220" fill="#0F1F38"/>
+<rect x="960" y="30" width="10" height="220" fill="#0F1F38"/>
+<rect x="1200" y="30" width="10" height="220" fill="#0F1F38"/>
+<rect x="240" y="110" width="970" height="8" fill="#F5B700"/>
+<rect x="240" y="180" width="970" height="8" fill="#F5B700"/>
+<g stroke="#0F1F38" stroke-width="2">
+<rect x="258" y="54" width="64" height="56" rx="2" fill="#9DB2D4"/>
+<rect x="330" y="46" width="70" height="64" rx="2" fill="#FFFFFF"/>
+<rect x="408" y="62" width="54" height="48" rx="2" fill="#F5B700"/>
+<rect x="498" y="50" width="96" height="60" rx="2" fill="#FFFFFF"/>
+<rect x="602" y="58" width="100" height="52" rx="2" fill="#9DB2D4"/>
+<rect x="738" y="46" width="60" height="64" rx="2" fill="#F5B700"/>
+<rect x="806" y="54" width="56" height="56" rx="2" fill="#FFFFFF"/>
+<rect x="874" y="60" width="68" height="50" rx="2" fill="#9DB2D4"/>
+<rect x="980" y="54" width="100" height="56" rx="2" fill="#9DB2D4"/>
+<rect x="1090" y="48" width="92" height="62" rx="2" fill="#FFFFFF"/>
+<rect x="262" y="120" width="88" height="60" rx="2" fill="#FFFFFF"/>
+<rect x="360" y="132" width="92" height="48" rx="2" fill="#9DB2D4"/>
+<rect x="500" y="116" width="70" height="64" rx="2" fill="#F5B700"/>
+<rect x="578" y="130" width="60" height="50" rx="2" fill="#FFFFFF"/>
+<rect x="646" y="122" width="56" height="58" rx="2" fill="#9DB2D4"/>
+<rect x="742" y="126" width="96" height="54" rx="2" fill="#9DB2D4"/>
+<rect x="848" y="118" width="94" height="62" rx="2" fill="#FFFFFF"/>
+<rect x="984" y="122" width="64" height="58" rx="2" fill="#F5B700"/>
+<rect x="1058" y="130" width="120" height="50" rx="2" fill="#FFFFFF"/>
+<rect x="258" y="192" width="96" height="58" rx="2" fill="#FFFFFF"/>
+<rect x="364" y="200" width="88" height="50" rx="2" fill="#9DB2D4"/>
+<rect x="500" y="190" width="110" height="60" rx="2" fill="#9DB2D4"/>
+<rect x="620" y="204" width="80" height="46" rx="2" fill="#F5B700"/>
+<rect x="740" y="192" width="70" height="58" rx="2" fill="#FFFFFF"/>
+<rect x="820" y="198" width="118" height="52" rx="2" fill="#FFFFFF"/>
+<rect x="982" y="190" width="96" height="60" rx="2" fill="#9DB2D4"/>
+<rect x="1088" y="196" width="90" height="54" rx="2" fill="#FFFFFF"/>
+</g>
+<g font-family="IBM Plex Mono, ui-monospace, monospace" font-size="18" font-weight="600" fill="#0F1F38" text-anchor="middle">
+<text x="290" y="88">B</text>
+<text x="365" y="84">C</text>
+<text x="435" y="92">A</text>
+<text x="546" y="86">C</text>
+<text x="652" y="90">B</text>
+<text x="768" y="84">A</text>
+<text x="834" y="88">C</text>
+<text x="908" y="91">B</text>
+<text x="1030" y="88">B</text>
+<text x="1136" y="85">C</text>
+<text x="306" y="156">C</text>
+<text x="406" y="162">B</text>
+<text x="535" y="154">A</text>
+<text x="608" y="161">C</text>
+<text x="674" y="157">B</text>
+<text x="790" y="159">B</text>
+<text x="895" y="155">C</text>
+<text x="1016" y="157">A</text>
+<text x="1118" y="161">C</text>
+<text x="306" y="227">C</text>
+<text x="408" y="231">B</text>
+<text x="555" y="226">B</text>
+<text x="660" y="233">A</text>
+<text x="775" y="227">C</text>
+<text x="879" y="230">C</text>
+<text x="1030" y="226">B</text>
+<text x="1133" y="229">C</text>
+</g>
+<rect x="0" y="250" width="1440" height="30" fill="#0F1F38"/>
+<rect x="0" y="250" width="1440" height="4" fill="#F5B700"/>
+</svg>
+</section>
+
+<section style="background: #F2F4F7">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 72px; padding-bottom: 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.14em; color: #44546C">CURSO PARA COMPRADORES INICIANTES</span>
+<h1 style="margin: 0; font-size: clamp(38px, 5.4vw, 66px); line-height: 1.02; font-weight: 800; letter-spacing: -0.02em">Do estoque ao contrato: aprenda a comprar em <span style="background: #F5B700; padding: 0 0.14em">60 horas</span></h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #44546C; max-width: 56ch">Curso rápido para quem está começando como comprador em empresas privadas. Você percorre cada etapa da rotina de compras, da análise de estoque à revisão de contratos, com um objetivo e um exercício prático por módulo.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#inscricao" style="display: inline-flex; align-items: center; min-height: 48px; box-sizing: border-box; padding: 0 24px; border-radius: 4px; background: #F5B700; color: #0F1F38; font-weight: 700; font-size: 16px; text-decoration: none">Quero me inscrever</a>
+<a href="#modulos" style="display: inline-flex; align-items: center; min-height: 48px; box-sizing: border-box; padding: 0 24px; border-radius: 4px; border: 2px solid #0F1F38; color: #0F1F38; font-weight: 600; font-size: 16px; text-decoration: none">Ver os módulos</a>
+</div>
+</div>
+<div style="flex: 1 1 380px; max-width: 500px; min-width: 0">
+<div style="background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px">
+<div style="background: #0F1F38; padding: 12px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px">
+<span class="mono" style="color: #FFFFFF; font-size: 12px; letter-spacing: 0.12em">PEDIDO DE COMPRA</span>
+<span class="mono" style="color: #F5B700; font-size: 12px; letter-spacing: 0.12em">EXEMPLO ILUSTRATIVO</span>
+</div>
+<div style="padding: 16px 20px; border-bottom: 1px solid #CBD5E3; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
+<div style="min-width: 0">
+<div style="font-weight: 600; font-size: 16px">Parafuso sextavado M8</div>
+<div class="mono" style="font-size: 12px; color: #44546C; margin-top: 2px">Classe A · cobertura 4 dias · lead time 7 dias</div>
+</div>
+<span class="mono" style="background: #F5B700; color: #0F1F38; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; padding: 6px 10px; border-radius: 2px">REPOR</span>
+</div>
+<div style="padding: 16px 20px; border-bottom: 1px solid #CBD5E3; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
+<div style="min-width: 0">
+<div style="font-weight: 600; font-size: 16px">Luva nitrílica G (caixa)</div>
+<div class="mono" style="font-size: 12px; color: #44546C; margin-top: 2px">Classe B · cobertura 18 dias · lead time 10 dias</div>
+</div>
+<span class="mono" style="background: #DCE4F0; color: #0F1F38; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; padding: 6px 10px; border-radius: 2px">OK</span>
+</div>
+<div style="padding: 16px 20px; border-bottom: 1px solid #CBD5E3; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px">
+<div style="min-width: 0">
+<div style="font-weight: 600; font-size: 16px">Etiqueta térmica 100 x 50</div>
+<div class="mono" style="font-size: 12px; color: #44546C; margin-top: 2px">Classe C · cobertura 95 dias · lead time 15 dias</div>
+</div>
+<span class="mono" style="background: #FFFFFF; border: 1.5px solid #0F1F38; color: #0F1F38; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; padding: 4.5px 8.5px; border-radius: 2px">EXCESSO</span>
+</div>
+<div style="padding: 14px 20px; font-size: 14px; line-height: 1.5; color: #44546C">Cobertura menor que o lead time pede reposição imediata. Você aprende a ler e a calcular isso nos módulos 2 e 4.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background: #0F1F38; color: #FFFFFF">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 40px; padding-bottom: 40px; display: flex; flex-wrap: wrap; gap: 32px 48px">
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: #F5B700">60 h</span>
+<span style="font-size: 15px; color: #B7C4DA">de carga horária total</span>
+</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: #F5B700">6 + 1</span>
+<span style="font-size: 15px; color: #B7C4DA">módulos e um projeto final</span>
+</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: #F5B700">5 etapas</span>
+<span style="font-size: 15px; color: #B7C4DA">estoque, curva ABC, reposição, negociação e contratos</span>
+</div>
+<div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: #F5B700">Planilha</span>
+<span style="font-size: 15px; color: #B7C4DA">único pré-requisito: filtros, soma e fórmulas simples</span>
+</div>
+</div>
+</section>
+
+<section id="para-quem" style="background: #FFFFFF">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 80px; padding-bottom: 80px; display: flex; flex-wrap: wrap; gap: 48px 64px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.14em; color: #44546C">PÚBLICO</span>
+<h2 style="margin: 0; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.08; font-weight: 800; letter-spacing: -0.015em">Para quem é este curso</h2>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px">
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Quem acabou de entrar na área de compras ou suprimentos de uma empresa privada</span></li>
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Assistentes e analistas que vão assumir cotações e negociações</span></li>
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Profissionais de almoxarifado e logística que estão migrando para compras</span></li>
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Recém-formados em administração, engenharia e logística</span></li>
+</ul>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.14em; color: #44546C">RESULTADO</span>
+<h2 style="margin: 0; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.08; font-weight: 800; letter-spacing: -0.015em">O que você sabe fazer ao final</h2>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px">
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Ler um relatório de estoque e apontar excesso, falta e itens parados</span></li>
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Classificar itens em A, B e C e definir a estratégia de compra de cada classe</span></li>
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Calcular quando e quanto repor</span></li>
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Preparar e conduzir uma negociação com fornecedor</span></li>
+<li style="display: flex; gap: 12px; font-size: 17px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 10px; height: 10px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Revisar as cláusulas principais de um contrato de compra</span></li>
+</ul>
+<div style="background: #F2F4F7; border: 1px solid #CBD5E3; border-radius: 4px; padding: 16px 20px; font-size: 15px; line-height: 1.5; color: #44546C"><strong style="color: #0F1F38">Pré-requisito:</strong> planilha básica. Nenhuma experiência em compras é necessária.</div>
+</div>
+</div>
+</section>
+
+<section id="modulos" style="background: #F2F4F7">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 80px; padding-bottom: 80px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.14em; color: #44546C">GRADE CURRICULAR</span>
+<h2 style="margin: 0; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.08; font-weight: 800; letter-spacing: -0.015em">60 horas, uma etapa de cada vez</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #44546C">Cada módulo tem um objetivo, quatro temas e um exercício prático. A barra abaixo mostra a proporção de horas de cada um.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div role="img" aria-label="Distribuição das 60 horas: módulo 1 com 6 horas, módulo 2 com 10, módulo 3 com 8, módulo 4 com 10, módulo 5 com 12, módulo 6 com 8 e projeto final com 6" style="display: flex; gap: 2px">
+<div style="flex: 6 1 0; min-width: 0; box-sizing: border-box; padding: 10px 4px; background: #9DB2D4; color: #0F1F38; display: flex; flex-direction: column; align-items: center; gap: 2px"><span class="mono" style="font-size: 11px; letter-spacing: 0.06em">01</span><span style="font-size: 13px; font-weight: 700">6 h</span></div>
+<div style="flex: 10 1 0; min-width: 0; box-sizing: border-box; padding: 10px 4px; background: #DCE4F0; color: #0F1F38; display: flex; flex-direction: column; align-items: center; gap: 2px"><span class="mono" style="font-size: 11px; letter-spacing: 0.06em">02</span><span style="font-size: 13px; font-weight: 700">10 h</span></div>
+<div style="flex: 8 1 0; min-width: 0; box-sizing: border-box; padding: 10px 4px; background: #9DB2D4; color: #0F1F38; display: flex; flex-direction: column; align-items: center; gap: 2px"><span class="mono" style="font-size: 11px; letter-spacing: 0.06em">03</span><span style="font-size: 13px; font-weight: 700">8 h</span></div>
+<div style="flex: 10 1 0; min-width: 0; box-sizing: border-box; padding: 10px 4px; background: #DCE4F0; color: #0F1F38; display: flex; flex-direction: column; align-items: center; gap: 2px"><span class="mono" style="font-size: 11px; letter-spacing: 0.06em">04</span><span style="font-size: 13px; font-weight: 700">10 h</span></div>
+<div style="flex: 12 1 0; min-width: 0; box-sizing: border-box; padding: 10px 4px; background: #9DB2D4; color: #0F1F38; display: flex; flex-direction: column; align-items: center; gap: 2px"><span class="mono" style="font-size: 11px; letter-spacing: 0.06em">05</span><span style="font-size: 13px; font-weight: 700">12 h</span></div>
+<div style="flex: 8 1 0; min-width: 0; box-sizing: border-box; padding: 10px 4px; background: #DCE4F0; color: #0F1F38; display: flex; flex-direction: column; align-items: center; gap: 2px"><span class="mono" style="font-size: 11px; letter-spacing: 0.06em">06</span><span style="font-size: 13px; font-weight: 700">8 h</span></div>
+<div style="flex: 6 1 0; min-width: 0; box-sizing: border-box; padding: 10px 4px; background: #F5B700; color: #0F1F38; display: flex; flex-direction: column; align-items: center; gap: 2px"><span class="mono" style="font-size: 11px; letter-spacing: 0.06em">PF</span><span style="font-size: 13px; font-weight: 700">6 h</span></div>
+</div>
+<span class="mono" style="font-size: 13px; letter-spacing: 0.1em; color: #44546C">TOTAL: 60 HORAS</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+
+<div style="flex: 1 1 480px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">MÓDULO 01</span>
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-size: 40px; font-weight: 800; line-height: 1">6 h</span>
+</div>
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Fundamentos do ciclo de compras</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Entender onde o comprador atua, do pedido interno ao pagamento ao fornecedor.</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Papel do comprador e das áreas parceiras: estoque, financeiro, fiscal e área solicitante</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Etapas do ciclo: requisição, cotação, pedido, recebimento e pagamento</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Indicadores de compras: prazo, custo, qualidade e nível de serviço</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Ética, conflito de interesses e política de compras da empresa</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #CBD5E3; font-size: 15px; line-height: 1.5"><strong>Exercício:</strong> mapear o fluxo de compra de uma empresa fictícia e apontar os gargalos.</div>
+</div>
+
+<div style="flex: 1 1 480px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">MÓDULO 02</span>
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-size: 40px; font-weight: 800; line-height: 1">10 h</span>
+</div>
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Análise de estoque</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Ler os números do estoque e entender o que eles pedem da área de compras.</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Giro de estoque e cobertura em dias</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Itens parados, obsoletos e em excesso</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Acuracidade e inventário: quando o saldo do sistema não confere</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Custo de manter estoque e custo da falta</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #CBD5E3; font-size: 15px; line-height: 1.5"><strong>Exercício:</strong> diagnosticar uma planilha de estoque com itens parados e rupturas e listar as ações de compra.</div>
+</div>
+
+<div style="flex: 1 1 480px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">MÓDULO 03</span>
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-size: 40px; font-weight: 800; line-height: 1">8 h</span>
+</div>
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Curva ABC</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Separar os itens que exigem atenção dos que podem ser comprados por regra.</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Construção da curva ABC por valor de consumo</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Cruzamento ABC e XYZ, que mede a variação da demanda</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Estratégia de compra para cada classe</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Revisão periódica da classificação</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #CBD5E3; font-size: 15px; line-height: 1.5"><strong>Exercício:</strong> montar a curva ABC em planilha e definir uma regra de compra para cada classe.</div>
+</div>
+
+<div style="flex: 1 1 480px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">MÓDULO 04</span>
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-size: 40px; font-weight: 800; line-height: 1">10 h</span>
+</div>
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Reposição e planejamento de compras</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Decidir quando comprar e quanto comprar de cada item.</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Consumo médio e previsão simples de demanda</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Lead time e estoque de segurança</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Ponto de pedido e revisão periódica</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Lote econômico e restrições reais: pedido mínimo e embalagem do fornecedor</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #CBD5E3; font-size: 15px; line-height: 1.5"><strong>Exercício:</strong> calcular ponto de pedido e quantidade de compra para itens das classes A, B e C.</div>
+</div>
+
+<div style="flex: 1 1 480px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">MÓDULO 05</span>
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-size: 40px; font-weight: 800; line-height: 1">12 h</span>
+</div>
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Negociação com fornecedores</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Preparar e conduzir uma negociação que considera o custo total da compra.</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Cadastro, homologação e avaliação de fornecedores</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Cotação, mapa comparativo e custo total de aquisição</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Preparação, condução e fechamento: metas, limites e melhor alternativa</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Condições além do preço: prazo de pagamento, frete, reajuste e garantia</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #CBD5E3; font-size: 15px; line-height: 1.5"><strong>Exercício:</strong> simular uma negociação com um fornecedor fictício e registrar o acordo fechado.</div>
+</div>
+
+<div style="flex: 1 1 480px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">MÓDULO 06</span>
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-size: 40px; font-weight: 800; line-height: 1">8 h</span>
+</div>
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Análise de contratos de compra</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Ler um contrato antes de assinar e saber o que levar ao jurídico.</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Estrutura do contrato e relação com o pedido de compra</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Cláusulas críticas: preço, reajuste, prazo de entrega, multa, garantia e rescisão</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Níveis de serviço e penalidades por descumprimento</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Riscos, aditivos e quando acionar o jurídico</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #CBD5E3; font-size: 15px; line-height: 1.5"><strong>Exercício:</strong> revisar um contrato modelo, marcar os riscos e propor ajustes.</div>
+</div>
+
+<div style="flex: 1 1 100%; min-width: 0; box-sizing: border-box; background: #0F1F38; color: #FFFFFF; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #B7C4DA">PROJETO FINAL</span>
+<span style="font-family: 'Archivo', system-ui, sans-serif; font-size: 40px; font-weight: 800; line-height: 1; color: #F5B700">6 h</span>
+</div>
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Projeto final integrador</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #B7C4DA; max-width: 70ch">Aplicar as cinco etapas em um caso completo de uma empresa fictícia.</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 40px">
+<li style="flex: 1 1 280px; min-width: 0; display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700"></span><span>Diagnóstico do estoque e classificação ABC</span></li>
+<li style="flex: 1 1 280px; min-width: 0; display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700"></span><span>Cálculo de reposição dos itens críticos</span></li>
+<li style="flex: 1 1 280px; min-width: 0; display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700"></span><span>Preparação da negociação com um fornecedor</span></li>
+<li style="flex: 1 1 280px; min-width: 0; display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700"></span><span>Revisão da minuta de contrato e plano de compras final</span></li>
+</ul>
+<div style="padding-top: 16px; border-top: 1px solid #3A4C6B; font-size: 15px; line-height: 1.5"><strong>Entrega:</strong> um plano de compras com as decisões justificadas.</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section style="background: #FFFFFF">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 80px; padding-bottom: 80px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.14em; color: #44546C">CONTAS DO COMPRADOR</span>
+<h2 style="margin: 0; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.08; font-weight: 800; letter-spacing: -0.015em">A matemática que você vai dominar</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 48px 64px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Curva ABC em uma imagem</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Poucos itens concentram a maior parte do valor consumido. As proporções abaixo são uma referência clássica e variam em cada empresa.</p>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span class="mono" style="font-size: 12px; letter-spacing: 0.1em; color: #44546C">% DOS ITENS DO ESTOQUE</span>
+<div role="img" aria-label="Itens do estoque: classe A 20 por cento, classe B 30 por cento, classe C 50 por cento" style="display: flex; gap: 2px; height: 48px">
+<div style="flex: 20 1 0; min-width: 0; background: #0F1F38; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">A</div>
+<div style="flex: 30 1 0; min-width: 0; background: #9DB2D4; color: #0F1F38; display: flex; align-items: center; justify-content: center; font-weight: 700">B</div>
+<div style="flex: 50 1 0; min-width: 0; background: #DCE4F0; color: #0F1F38; display: flex; align-items: center; justify-content: center; font-weight: 700">C</div>
+</div>
+<span class="mono" style="font-size: 13px; color: #44546C">A 20% · B 30% · C 50%</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span class="mono" style="font-size: 12px; letter-spacing: 0.1em; color: #44546C">% DO VALOR CONSUMIDO</span>
+<div role="img" aria-label="Valor consumido: classe A 80 por cento, classe B 15 por cento, classe C 5 por cento" style="display: flex; gap: 2px; height: 48px">
+<div style="flex: 80 1 0; min-width: 0; background: #0F1F38; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700">A</div>
+<div style="flex: 15 1 0; min-width: 0; background: #9DB2D4; color: #0F1F38; display: flex; align-items: center; justify-content: center; font-weight: 700">B</div>
+<div style="flex: 5 1 0; min-width: 0; background: #DCE4F0; color: #0F1F38; display: flex; align-items: center; justify-content: center; font-weight: 700">C</div>
+</div>
+<span class="mono" style="font-size: 13px; color: #44546C">A 80% · B 15% · C 5%</span>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.5">
+<li><strong>Classe A:</strong> poucos itens e muito dinheiro. Negociação individual e revisão frequente.</li>
+<li><strong>Classe B:</strong> atenção moderada e regras de reposição padronizadas.</li>
+<li><strong>Classe C:</strong> muitos itens e pouco valor. Automatizar e comprar em lotes maiores.</li>
+</ul>
+</div>
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0; font-size: 24px; line-height: 1.15; font-weight: 800">Quatro fórmulas do dia a dia</h3>
+<div style="background: #F2F4F7; border: 1px solid #CBD5E3; border-radius: 4px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 700; font-size: 16px">Giro de estoque</span>
+<span class="mono" style="font-size: 14px; line-height: 1.5; overflow-wrap: anywhere">Giro = custo das mercadorias vendidas ÷ estoque médio</span>
+<span style="font-size: 14px; color: #44546C">Mostra quantas vezes o estoque se renova no período.</span>
+</div>
+<div style="background: #F2F4F7; border: 1px solid #CBD5E3; border-radius: 4px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 700; font-size: 16px">Cobertura de estoque</span>
+<span class="mono" style="font-size: 14px; line-height: 1.5; overflow-wrap: anywhere">Cobertura (dias) = estoque atual ÷ consumo médio diário</span>
+<span style="font-size: 14px; color: #44546C">Mostra por quantos dias o estoque atende a demanda.</span>
+</div>
+<div style="background: #F2F4F7; border: 1px solid #CBD5E3; border-radius: 4px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 700; font-size: 16px">Ponto de pedido</span>
+<span class="mono" style="font-size: 14px; line-height: 1.5; overflow-wrap: anywhere">PP = consumo médio diário × lead time + estoque de segurança</span>
+<span style="font-size: 14px; color: #44546C">Indica o saldo em que o pedido de reposição deve sair.</span>
+</div>
+<div style="background: #F2F4F7; border: 1px solid #CBD5E3; border-radius: 4px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-weight: 700; font-size: 16px">Lote econômico de compra</span>
+<span class="mono" style="font-size: 14px; line-height: 1.5; overflow-wrap: anywhere">LEC = √(2 × D × S ÷ H)</span>
+<span style="font-size: 14px; color: #44546C">D: demanda anual. S: custo de fazer um pedido. H: custo anual de manter uma unidade em estoque.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="metodo" style="background: #F2F4F7">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 80px; padding-bottom: 80px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.14em; color: #44546C">MÉTODO</span>
+<h2 style="margin: 0; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.08; font-weight: 800; letter-spacing: -0.015em">Todo módulo segue o mesmo ritmo</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<div style="flex: 1 1 240px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">PASSO 1</span>
+<h3 style="margin: 0; font-size: 20px; line-height: 1.2; font-weight: 800">Conceito</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Aula curta com o essencial do tema.</p>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">PASSO 2</span>
+<h3 style="margin: 0; font-size: 20px; line-height: 1.2; font-weight: 800">Exemplo resolvido</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Uma situação de compra refeita passo a passo.</p>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">PASSO 3</span>
+<h3 style="margin: 0; font-size: 20px; line-height: 1.2; font-weight: 800">Exercício</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Você resolve em planilha, com o caso de uma empresa fictícia.</p>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; box-sizing: border-box; background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #44546C">PASSO 4</span>
+<h3 style="margin: 0; font-size: 20px; line-height: 1.2; font-weight: 800">Revisão</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Correção e dúvidas antes de seguir para o próximo módulo.</p>
+</div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #CBD5E3; border-radius: 4px; padding: 28px; display: flex; flex-wrap: wrap; gap: 20px 48px; align-items: flex-start">
+<h3 style="flex: 1 1 220px; min-width: 0; margin: 0; font-size: 22px; line-height: 1.2; font-weight: 800">Material de apoio apresentado em aula</h3>
+<ul style="flex: 2 1 420px; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Planilhas de estoque, curva ABC e reposição</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Checklist de preparação de negociação</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Checklist de revisão de contrato</span></li>
+<li style="display: flex; gap: 10px; font-size: 16px; line-height: 1.5"><span aria-hidden="true" style="flex-shrink: 0; box-sizing: border-box; width: 8px; height: 8px; margin-top: 8px; background: #F5B700; border: 1.5px solid #0F1F38"></span><span>Modelos de pedido de compra</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="perguntas" style="background: #FFFFFF">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 80px; padding-bottom: 80px; display: flex; flex-wrap: wrap; gap: 40px 64px">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px; align-self: flex-start">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.14em; color: #44546C">PERGUNTAS FREQUENTES</span>
+<h2 style="margin: 0; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.08; font-weight: 800; letter-spacing: -0.015em">O que costuma ser perguntado</h2>
+</div>
+<div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column">
+<div style="border-top: 1px solid #CBD5E3; padding-top: 20px; padding-bottom: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 19px; line-height: 1.25; font-weight: 700">Preciso ter experiência em compras?</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Não. O curso parte do zero e pede apenas o uso básico de planilha.</p>
+</div>
+<div style="border-top: 1px solid #CBD5E3; padding-top: 20px; padding-bottom: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 19px; line-height: 1.25; font-weight: 700">O conteúdo serve para qualquer empresa?</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">O foco são empresas privadas de varejo, indústria e serviços. Os casos usam empresas fictícias e os métodos se adaptam à sua rotina.</p>
+</div>
+<div style="border-top: 1px solid #CBD5E3; padding-top: 20px; padding-bottom: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 19px; line-height: 1.25; font-weight: 700">60 horas cobrem tudo sobre compras?</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">É um curso de entrada. Cada módulo vai ao essencial da etapa e indica o que estudar depois.</p>
+</div>
+<div style="border-top: 1px solid #CBD5E3; padding-top: 20px; padding-bottom: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 19px; line-height: 1.25; font-weight: 700">O curso substitui a análise do jurídico nos contratos?</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Não. Você aprende a identificar cláusulas críticas e riscos para saber o que levar ao jurídico da sua empresa.</p>
+</div>
+<div style="border-top: 1px solid #CBD5E3; border-bottom: 1px solid #CBD5E3; padding-top: 20px; padding-bottom: 20px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 19px; line-height: 1.25; font-weight: 700">Como é a avaliação?</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #44546C">Cada módulo termina com um exercício prático, e o curso fecha com o projeto final integrador.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="inscricao" style="background: #0F1F38; color: #FFFFFF">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 80px; padding-bottom: 80px; display: flex; flex-wrap: wrap; gap: 40px 64px">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.14em; color: #B7C4DA">INSCRIÇÃO</span>
+<h2 style="margin: 0; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.08; font-weight: 800; letter-spacing: -0.015em">Comece a comprar com método</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #B7C4DA; max-width: 52ch">Para se inscrever ou tirar dúvidas, escreva para <a href="mailto:janagy50@gmail.com" style="color: #F5B700; font-weight: 600; text-decoration: underline">janagy50@gmail.com</a></p>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column">
+<div style="border-top: 1px solid #3A4C6B; padding-top: 16px; padding-bottom: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #B7C4DA">VALOR</span>
+<span style="font-size: 15px; font-weight: 600">R$ 100,00</span>
+</div>
+<div style="border-top: 1px solid #3A4C6B; padding-top: 16px; padding-bottom: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #B7C4DA">INÍCIO</span>
+<span style="font-size: 15px; font-weight: 600">Março de 2027</span>
+</div>
+<div style="border-top: 1px solid #3A4C6B; padding-top: 16px; padding-bottom: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #B7C4DA">MODALIDADE</span>
+<span style="font-size: 15px; font-weight: 600">Online</span>
+</div>
+<div style="border-top: 1px solid #3A4C6B; border-bottom: 1px solid #3A4C6B; padding-top: 16px; padding-bottom: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px">
+<span class="mono" style="font-size: 13px; letter-spacing: 0.12em; color: #B7C4DA">CARGA HORÁRIA</span>
+<span style="font-size: 15px; font-weight: 600">60 horas</span>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="background: #0A1730; color: #B7C4DA">
+<div style="box-sizing: border-box; width: 100%; max-width: 1240px; margin: 0 auto; padding-left: clamp(16px, 4vw, 48px); padding-right: clamp(16px, 4vw, 48px); padding-top: 28px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 14px">
+<span>Compras na Prática · curso de 60 horas para compradores iniciantes</span>
+<span>© 2026 Janete Novaes</span>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
